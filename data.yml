@@ -3,11 +3,17 @@ jobs: {}
 locations:
   SOURCE:
     mappingDefinitions:
+      "27":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
       "8":
         database: ""
         schema: ""
   TARGET:
     mappingDefinitions:
+      "27":
+        database: DEMO_DB
+        schema: SPIRES
       "8":
         database: ""
         schema: ""
