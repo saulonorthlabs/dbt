@@ -1,5 +1,12 @@
 defaultStorageMapping: SOURCE
-jobs: {}
+jobs:
+  Job-5:
+    excludeSelector: ""
+    id: 5
+    includeSelector: "{ location: SOURCE name: CUSTOMER } OR { location: SOURCE name: LINEITEM } OR { location: SOURCE name: NATION } OR { location: SOURCE name: ORDERS } OR { location: SOURCE name: PART } OR { location: SOURCE name: PARTSUPP } OR { location: SOURCE name: REGION } OR { location: SOURCE name: SUPPLIER } OR { location: TARGET name: STG_CUSTOMER } OR { location: TARGET name: STG_LINEITEM } OR { location: TARGET name: STG_NATION } OR { location: TARGET name: STG_ORDERS } OR { location: TARGET name: STG_ORDERS_LINEITEM } OR { location: TARGET name: STG_PART } OR { location: TARGET name: STG_PARTSUPP } OR { location: TARGET name: STG_REGION } OR { location: TARGET name: STG_SUPPLIER } OR { location: TARGET name: DIM_CUSTOMER } OR { location: TARGET name: DIM_PART } OR { location: TARGET name: DIM_SUPPLIER } OR { location: TARGET name: V_PART }"
+    name: Test
+    steps: []
+    subgraphs: []
 locations:
   SOURCE:
     mappingDefinitions:
