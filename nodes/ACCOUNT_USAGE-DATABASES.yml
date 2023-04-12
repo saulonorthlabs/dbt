@@ -1,0 +1,154 @@
+steps:
+  DATABASES-605ec35f-38bc-4319-9bac-838c1b1f045e:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: ACCOUNT_USAGE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: c22ecdbf-0578-472b-b5e3-0c441f6629ce
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: DATABASE_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7995511b-768d-4bd5-bce6-8b9b8447fb75
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DATABASE_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 65daa977-6e05-43f8-abb7-31485cfd66ad
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: DATABASE_OWNER
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: cdce8135-473f-4494-a11b-0ed19b392f8c
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: VARCHAR(3)
+            defaultValue: ""
+            description: ""
+            name: IS_TRANSIENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 87ee4191-1505-4af3-9d7c-17bbee762e82
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: COMMENT
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: fa62bbb2-8cf3-40e8-9937-cbb32b312164
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: TIMESTAMP_LTZ(6)
+            defaultValue: ""
+            description: ""
+            name: CREATED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1a66f079-4de8-42e3-8170-a6ad49cd4f71
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: TIMESTAMP_LTZ(6)
+            defaultValue: ""
+            description: ""
+            name: LAST_ALTERED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 9b7788c3-d3f8-494d-bbd0-bf70ab19141c
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: TIMESTAMP_LTZ(6)
+            defaultValue: ""
+            description: ""
+            name: DELETED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 7dfd3e3b-89fa-4e52-abf8-07e6c856f91a
+              stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: RETENTION_TIME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('ACCOUNT_USAGE', 'DATABASES') }}
+      name: DATABASES
+      schema: ""
+      sqlType: Source
+      table: DATABASES
+      type: sourceInput
+    stepCounter: 605ec35f-38bc-4319-9bac-838c1b1f045e

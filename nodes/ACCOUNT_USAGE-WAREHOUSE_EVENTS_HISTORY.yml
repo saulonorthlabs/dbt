@@ -1,0 +1,169 @@
+steps:
+  WAREHOUSE_EVENTS_HISTORY-410e57e3-9d5f-4a77-a933-747fcd15fbd7:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: ACCOUNT_USAGE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 8c1de274-7ccd-4469-b637-ad4c9bd41e0b
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: TIMESTAMP_LTZ(6)
+            defaultValue: ""
+            description: ""
+            name: TIMESTAMP
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: b44426ac-5493-4d16-a2d4-4a9f7627dcb2
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: WAREHOUSE_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 6a57742c-f054-4a25-812b-4e0bfdccbb54
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: WAREHOUSE_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 78ec4e97-4168-49c2-8b53-fc8c688945c4
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: CLUSTER_NUMBER
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2b77e2d4-a9b2-4f18-a7b0-ac2ff5c8d982
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: EVENT_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 708a1d9b-1ba7-4ec4-84bb-2075a9042e49
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: EVENT_REASON
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 32ff6d71-fded-4d7f-b057-9cf793bbf32f
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: EVENT_STATE
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 48e069a2-5e96-4cbf-90f6-40bac8c430c2
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: USER_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: e89d0b9e-da5d-40cc-adf7-d421b7b96f55
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: ROLE_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 61bc2a3c-7b99-4e07-ab4d-0d5d9cf27e20
+              stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: QUERY_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('ACCOUNT_USAGE', 'WAREHOUSE_EVENTS_HISTORY') }}
+      name: WAREHOUSE_EVENTS_HISTORY
+      schema: ""
+      sqlType: Source
+      table: WAREHOUSE_EVENTS_HISTORY
+      type: sourceInput
+    stepCounter: 410e57e3-9d5f-4a77-a933-747fcd15fbd7

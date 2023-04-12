@@ -7,7 +7,19 @@ jobs:
     name: Test
     steps: []
     subgraphs: []
+  Job-6:
+    excludeSelector: ""
+    id: 6
+    includeSelector: "{ location: SOURCE name: CUSTOMER } OR { location: ACCOUNT_USAGE name: WAREHOUSE_METERING_HISTORY } OR { location: ACCOUNT_USAGE name: DATABASES } OR { location: SOURCE name: LINEITEM } OR { location: SOURCE name: NATION } OR { location: SOURCE name: ORDERS } OR { location: SOURCE name: PART } OR { location: SOURCE name: PARTSUPP } OR { location: ACCOUNT_USAGE name: QUERY_HISTORY } OR { location: SOURCE name: REGION } OR { location: SOURCE name: SUPPLIER } OR { location: ACCOUNT_USAGE name: WAREHOUSE_EVENTS_HISTORY } OR { location: ACCOUNT_USAGE name: WAREHOUSE_LOAD_HISTORY } OR { location: TARGET name: STG_CUSTOMER } OR { location: TARGET name: STG_DATABASES } OR { location: TARGET name: STG_LINEITEM } OR { location: TARGET name: STG_NATION } OR { location: TARGET name: STG_ORDERS_LINEITEM } OR { location: TARGET name: STG_PART } OR { location: TARGET name: STG_PARTSUPP } OR { location: TARGET name: STG_QUERY_HISTORY } OR { location: TARGET name: STG_REGION } OR { location: TARGET name: STG_SUPPLIER } OR { location: TARGET name: STG_WAREHOUSE_EVENTS_HISTORY } OR { location: TARGET name: STG_WAREHOUSE_LOAD_HISTORY } OR { location: TARGET name: STG_WAREHOUSE_METERING_HISTORY } OR { location: TARGET name: DIM_WAREHOUSE_EVENTS_HISTORY } OR { location: TARGET name: DIM_CUSTOMER } OR { location: TARGET name: DIM_DATABASES } OR { location: TARGET name: DIM_NATION } OR { location: TARGET name: DIM_PART } OR { location: TARGET name: DIM_PARTSUPP } OR { location: TARGET name: DIM_QUERY_HISTORY } OR { location: TARGET name: DIM_REGION } OR { location: TARGET name: DIM_SUPPLIER } OR { location: TARGET name: DIM_WAREHOUSE_LOAD_HISTORY } OR { location: TARGET name: DIM_WAREHOUSE_METERING_HISTORY } OR { location: TARGET name: V_PART }"
+    name: Full
+    steps: []
+    subgraphs: []
 locations:
+  ACCOUNT_USAGE:
+    mappingDefinitions:
+      "27":
+        database: SNOWFLAKE
+        schema: ACCOUNT_USAGE
   SOURCE:
     mappingDefinitions:
       "27":

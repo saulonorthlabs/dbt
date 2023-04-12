@@ -1,0 +1,139 @@
+steps:
+  WAREHOUSE_LOAD_HISTORY-f6eacc9e-d123-4e24-a03c-2e0700e10d5d:
+    operation:
+      database: ""
+      dataset: ""
+      deployEnabled: true
+      description: ""
+      locationID: ""
+      locationName: ACCOUNT_USAGE
+      metadata:
+        columns:
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 93fa8d8d-5e77-4c8e-ac0a-e51eb30ee141
+              stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
+            config: {}
+            dataType: TIMESTAMP_LTZ(6)
+            defaultValue: ""
+            description: ""
+            name: START_TIME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 533b083c-ac0a-427e-898b-cd72494aaa40
+              stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
+            config: {}
+            dataType: TIMESTAMP_LTZ(9)
+            defaultValue: ""
+            description: ""
+            name: END_TIME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 29610fa8-aa1b-4453-a3ba-627ee894641b
+              stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
+            config: {}
+            dataType: NUMBER(38,0)
+            defaultValue: ""
+            description: ""
+            name: WAREHOUSE_ID
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 1482cd35-d754-4fc3-b529-673071f2aab2
+              stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
+            config: {}
+            dataType: VARCHAR(16777216)
+            defaultValue: ""
+            description: ""
+            name: WAREHOUSE_NAME
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 2de93096-ca82-4131-aa9f-cab566347b34
+              stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
+            config: {}
+            dataType: NUMBER(38,9)
+            defaultValue: ""
+            description: ""
+            name: AVG_RUNNING
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 77d5f94b-b37d-4d63-bc43-1e30e31bd2f6
+              stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
+            config: {}
+            dataType: NUMBER(38,9)
+            defaultValue: ""
+            description: ""
+            name: AVG_QUEUED_LOAD
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 127a19c8-41c4-4a3c-9e54-9f92afb07f83
+              stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
+            config: {}
+            dataType: NUMBER(38,9)
+            defaultValue: ""
+            description: ""
+            name: AVG_QUEUED_PROVISIONING
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+          - acceptedValues:
+              strictMatch: true
+              values: []
+            appliedColumnTests: {}
+            columnReference:
+              columnCounter: 73e8dada-fae9-4ae3-a90b-9e840dc55d26
+              stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
+            config: {}
+            dataType: NUMBER(38,9)
+            defaultValue: ""
+            description: ""
+            name: AVG_BLOCKED
+            nullable: true
+            primaryKey: false
+            uniqueKey: false
+        join:
+          joinCondition: FROM {{ ref('ACCOUNT_USAGE', 'WAREHOUSE_LOAD_HISTORY') }}
+      name: WAREHOUSE_LOAD_HISTORY
+      schema: ""
+      sqlType: Source
+      table: WAREHOUSE_LOAD_HISTORY
+      type: sourceInput
+    stepCounter: f6eacc9e-d123-4e24-a03c-2e0700e10d5d
