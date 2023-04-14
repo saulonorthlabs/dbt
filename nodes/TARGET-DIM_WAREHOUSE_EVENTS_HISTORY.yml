@@ -87,6 +87,7 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
+            isBusinessKey: true
             name: CLUSTER_NUMBER
             nullable: true
             sourceColumnReferences:
@@ -115,6 +116,7 @@ steps:
             description: ""
             hashColumns: []
             hashDetails: null
+            isBusinessKey: true
             name: EVENT_REASON
             nullable: true
             sourceColumnReferences:
