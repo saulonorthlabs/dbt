@@ -28,12 +28,24 @@ jobs:
     name: Example 2
     steps: []
     subgraphs: []
+  Job-9:
+    excludeSelector: ""
+    id: 9
+    includeSelector: "{ location: TARGET name: V_PART } OR { subgraph: \"New Subgraph\" }"
+    name: Example 3
+    steps: []
+    subgraphs: []
 locations:
   ACCOUNT_USAGE:
     mappingDefinitions:
       "27":
         database: SNOWFLAKE
         schema: ACCOUNT_USAGE
+  NEW_TARGET:
+    mappingDefinitions:
+      "27":
+        database: UTIL_DB
+        schema: PUBLIC
   SOURCE:
     mappingDefinitions:
       "27":
@@ -1993,14 +2005,14 @@ stepTypes:
     name: Persistent Stage
     version: 1
 subgraphs:
-  Subgraph-2:
-    id: "2"
-    name: partial
+  Subgraph-5:
+    id: "5"
+    name: New Subgraph
     steps:
-      - 410e57e3-9d5f-4a77-a933-747fcd15fbd7
-      - f6eacc9e-d123-4e24-a03c-2e0700e10d5d
-      - e2158549-97cc-411a-9d39-c886b241e3c7
-      - 8ed359bb-ea34-490e-83f0-e16bb1e2f297
-      - f9f48c24-a88f-4c09-9734-a46b9a240df8
-      - df650772-c5fc-44eb-aad5-6ff1b67cc80c
+      - e86450c7-2011-4388-a082-6e7f7a782a85
+      - 96b5c11a-2a7c-4f10-a110-00a8a76ab5db
+      - 5bea4ea6-7820-49be-b8aa-bc4234235348
+      - f63af002-8a75-4584-a01e-ea1f34a568a8
+      - 80ccd021-04ed-49d5-adab-709bc18292be
+      - 7195a5e2-e8cc-4735-917d-751e0f49dfcf
 version: 1
