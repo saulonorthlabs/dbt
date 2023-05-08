@@ -38,27 +38,27 @@ jobs:
 locations:
   ACCOUNT_USAGE:
     mappingDefinitions:
-      "27":
-        database: SNOWFLAKE
-        schema: ACCOUNT_USAGE
+      "29":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: CORE
   NEW_TARGET:
     mappingDefinitions:
-      "27":
-        database: UTIL_DB
-        schema: PUBLIC
+      "29":
+        database: KEBOOLA_12299
+        schema: WORKSPACE_40191109
   SOURCE:
     mappingDefinitions:
-      "27":
-        database: SNOWFLAKE_SAMPLE_DATA
-        schema: TPCH_SF1
+      "29":
+        database: SNOWFLAKE
+        schema: CORE
       "8":
         database: ""
         schema: ""
   TARGET:
     mappingDefinitions:
-      "27":
-        database: DEMO_DB
-        schema: SPIRES
+      "29":
+        database: KEBOOLA_12299
+        schema: WORKSPACE_40191109
       "8":
         database: ""
         schema: ""
