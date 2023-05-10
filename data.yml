@@ -41,14 +41,23 @@ locations:
       "27":
         database: SNOWFLAKE
         schema: ACCOUNT_USAGE
+      "29":
+        database: SNOWFLAKE
+        schema: ACCOUNT_USAGE
   NEW_TARGET:
     mappingDefinitions:
       "27":
         database: UTIL_DB
         schema: PUBLIC
+      "29":
+        database: UTIL_DB
+        schema: PUBLIC
   SOURCE:
     mappingDefinitions:
       "27":
+        database: SNOWFLAKE_SAMPLE_DATA
+        schema: TPCH_SF1
+      "29":
         database: SNOWFLAKE_SAMPLE_DATA
         schema: TPCH_SF1
       "8":
@@ -57,6 +66,9 @@ locations:
   TARGET:
     mappingDefinitions:
       "27":
+        database: DEMO_DB
+        schema: SPIRES
+      "29":
         database: DEMO_DB
         schema: SPIRES
       "8":
@@ -2009,9 +2021,6 @@ subgraphs:
     id: "5"
     name: New Subgraph
     steps:
-      - e86450c7-2011-4388-a082-6e7f7a782a85
-      - 96b5c11a-2a7c-4f10-a110-00a8a76ab5db
-      - 5bea4ea6-7820-49be-b8aa-bc4234235348
       - f63af002-8a75-4584-a01e-ea1f34a568a8
       - 80ccd021-04ed-49d5-adab-709bc18292be
       - 7195a5e2-e8cc-4735-917d-751e0f49dfcf
